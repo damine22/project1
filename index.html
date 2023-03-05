@@ -2,10 +2,15 @@
 <html>
   <head>
     <title>Login Page</title>
+    <script>
+      function displayWelcomeMessage() {
+        alert("Welcome, " + document.getElementById("username").value + "!");
+      }
+    </script>
   </head>
   <body>
     <h1>Login Page</h1>
-    <form action="login.php" method="post">
+    <form action="#" method="post" onsubmit="displayWelcomeMessage(); return false;">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username"><br><br>
       <label for="password">Password:</label>
